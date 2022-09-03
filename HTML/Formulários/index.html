@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form>
+        <label>Seu e-mail:</label>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="pnome">Primeiro Nome</label>
+        <input type="text" id="pnome" name="pnome" placeholder="Dica do que sera digitado" required><br><br>
+
+        <label for="unome">Último Nome</label>
+        <input type="text" name="unome" id="unome" placeholder="Seu último nome" required><br><br>
+<!--A tag required indica que o local tem um campo obrigatório para ser preenchido-->
+    <!--Tipo RADIO-->
+        <label>
+            <strong>Qual seu nível de programação??</strong> 
+        </label><br>
+        <label>
+            <input type="radio" name="nivel" value="iniciante"> Sou Iniciante
+        </label>
+        <label>
+            <input type="radio" name="nivel" value="medio"> Sou mediano
+        </label>
+        <label>
+            <input type="radio" name="nivel" value="expert"> Sou Expert
+        </label><br><br>
+        <!--Tipo select-->
+        <label for="escolaridade">
+            <strong>Sua escolaridade</strong>
+            <select id="escolaridade">
+                <option selected disabled value="">Selecione</option>
+                <option>Educação basica</option>
+                <option>Ensino médio</option>
+                <option>Ensino superior</option>
+            </select>
+        </label><br><br>
+        <label>
+            <strong>Selecione as tecnologias que você conhece:</strong>
+        </label><br><br>
+        <input type="checkbox" name="tecnologia1" id="tecnologia1" value="HTML">
+        <label for="tecnologia1">HTML</label>
+        <input type="checkbox" name="tecnologia2" id="tecnologia2" value="CSS">
+        <label for="tecnologia2">CSS</label>
+        <input type="checkbox" name="tecnologia23" id="tecnologia3" value="JavaScript">
+        <label for="tecnologia3">JavaScript</label>
+        <br><br>
+        <!--Tipo date-->
+
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="datetime-local" name="nascimento" id="nascimento">
+        <!-- Se não quiser que aparece o horario, basta substituir o date
+        time por apenas date-->
+
+        <br><br>
+    <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>

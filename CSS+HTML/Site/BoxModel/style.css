@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    /*
+  Demonstração box-sizing: 
+  https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+  */
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    background-color: #121212;
+    color:  #FFFFFF;;
+    width: 700px;
+    margin: auto;
+    /* Padding é o espaçamento interno, funciona do mesmo modo que o margin */
+    padding-left: 30px;
+    border: 5px solid red;
+}
+.rede-social h2{
+    text-align: center;
+}
+.rede-social ul{
+    padding: 0px;
+    list-style: none;
+
+}
+.rede-social li{
+    margin-bottom: 12px;
+}
+.rede-social a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.rede-social a:hover{
+    color: #FF0000;
+}
