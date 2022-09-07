@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0; 
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 180vh;
+}
+.container{
+    background-color: #121212;
+    height: 500px;
+    margin: 50px;
+    /* Ativando o flexbox no container: */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+
+    /* justify content vai alinhar na linha, já o align itens é na coluna, quando o flex directio está em "row" */
+}
+/* Jutify-content - Sempre aplica ao item que tem o display flex. Ou seja, nesse caso, vai ser aplicado ao container
+E não nos filhos como no exemplo do flex order 
+    -Justify-content: flex-end; Alinha no final da linha no topo.
+    -Justify-content: center; Alinha no centro da linha no topo.
+    -Justify-content: space-between; Espaçamento igual entre eles.
+    -Justify-content: space-around; Espaçamento igual entre eles com folga nos cantos.
+    -Justify-content: space-around: ítens distribuídos igualmente com o mesmo espaçamento entre cada linha.
+    -Justify-content:space-evenly: ítens distribuídos igualmente com o mesmo espaçamento entre eles. */
+.area{
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+
+    /* Flexshirink e flexbasics */
+    /* flex-basis: 400px;
+    flex-grow: 1;   */
+    /* flex-grow: nesse caso foi usado para ativar o flex shirink dos itens abaixo, se deixasse apenas flex, iria dar errado. */
+}
+.item-1{
+    background-color: red;
+    /* flex: 1; */
+    /* Essa propriedade de flex:1 é usada nos filhos do item que está ativando o flexbox. */
+    /* flex-shrink: 1; */
+    /* order: 3; */
+}
+.item-2{
+    background-color: blue;
+    /* flex: 2; */
+    /* flex-shrink: 1; */
+    /* order: 2; */
+}
+.item-3{
+    background-color: brown;
+    /* flex: 1; */
+    /* flex-shrink: 2; */
+    /* Esse elemento vai reduzir duas vezes mais que os outros elementos com 1 */
+    /* order: 1; */
+}
+.item-4{
+    background-color: blueviolet;
+    align-self: flex-start;
+    /* Align-self serve para poder determinar a posição individual do item, assim conseguimos organizar item por item. */
+}
